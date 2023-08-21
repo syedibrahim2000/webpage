@@ -1,0 +1,126 @@
+*{
+padding: 0;
+margin: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;    
+}
+section{
+position: relative;
+min-height: 100vh;
+width: 100%;
+background-color: #191919;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+section:before{  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #fed700; 
+    clip-path: polygon(99% 0, 100% 0, 100% 100%, 99% 100%);
+}
+section .container{
+    position: relative;
+    box-sizing: border-box;
+    padding: 100px 50px 100px 150px;
+}
+section .container h2{
+    color: white;
+    font-size: 70px;
+}
+section .container h2 span{
+    color: #a1ea39;
+    font-size: 70px;
+}
+section .container p{
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+}
+section .container a{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #fed700;
+    color: black;
+    padding: 13px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+section .container a:hover{
+    color:blue;
+}
+section main-img{
+    position: relative;
+    padding-right: 150px;
+}
+section .main-img img{
+    max-width: 450px;
+}
+.nav{
+    position: absolute;
+    display: flex;
+    top: 60px;
+    left: 150px;
+    border-right: 5px solid #fed700;
+    padding-right: 10px;
+}
+.nav li{
+    list-style-type: none;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav li a.active,
+.nav li a:hover{
+    color: #fed700;
+}
+.Social{
+    position: absolute;
+    display: flex;
+    bottom: 60px;
+    left: 150px;
+}
+.Social li{
+    list-style: none;
+}
+.Social li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Social li a:hover{
+    color: #fed700;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 4rem;
+}
+.team-text h2{
+    font-size: var(--h2-font);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+.team-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
